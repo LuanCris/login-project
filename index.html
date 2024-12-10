@@ -8,19 +8,33 @@
 </head>
 <body>
     <h1>
-        Login your acount.
+        
     </h1>
 
-        <form action="register.php" method="post" autocomplete="on" >
-        <p>
-            <label for="imail">E-mail</label>
-            <input type="email" name="email" id="imail" required>
-            <label for="ipassword">Password</label>
-            <input type="password" name="password" id="ipassword" required>
-            <input type="submit" value="Send">
-            <input type="reset" value="Clear">
-        </p> 
-        </form>
+        
+            <div>
+                <form action="register.php" method="post" autocomplete="off" >
+                    <h2 style="color: rgb(101, 101, 101);">log in</h2>
+                    <fieldset>
+
+                    <div class="incenter">
+                        <p>
+                            <label for="imail">E-mail</label>
+                            <input type="email" name="email" id="imail" required placeholder="windo40@gmail.com" maxlength="30" minlength="15">
+                        </p>
+                        <p>
+                            <label for="ipassword">Password</label>
+                            <input type="password" name="password" id="ipassword" required placeholder="Storm2098#" maxlength="15" minlength="8" >
+                        </p>
+                    </div>
+                    <div class="downmiddle">
+                        <input style="font-weight: bold; " type="submit" value="Send">
+                        <input style="font-weight: bold; " type="reset" value="Clear">
+                    </div>
+                    </fieldset>
+                </form>
+            </div>
+        
 
 </body>
 </html>
