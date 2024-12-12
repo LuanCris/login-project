@@ -17,7 +17,8 @@ TYPICAL DEVICE BREAKPOINTS
 
 body{
     font-family: 'Times New Roman', Times, serif;
-    background-color: aquamarine;
+    height: 100vh;
+    background-image: linear-gradient(to right, aqua, aquamarine);
 }
 
 div{
@@ -34,7 +35,7 @@ div{
 form{
     background-color: white;
     box-shadow: 2px 3px 4px 2px rgba(0, 0, 0, 0.259);
-    border-radius: 8px;
+    border-radius: 10px;
     margin: 80px 10px 80px 10px;
     height: 70vh;
     text-align: center;
@@ -48,7 +49,7 @@ fieldset{
     margin:auto ;
     width: 80%;
     height: 65%;
-    border-radius: 8px;
+    border-radius: 10px;
     border: solid lightgray 1px;
 
     position: absolute;
@@ -78,9 +79,9 @@ input {
     border: solid  lightgray 1.5px;
     background-color:white;
     color:rgb(101, 101, 101);
-    border-radius: 3px;
+    border-radius: 5px;
     margin: 0px 6px 0px 6px;
-    padding:  0px 6px 0px 6px;
+    padding: 2px 4px;
 }
 
 input:hover{
