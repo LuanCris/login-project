@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/*MEDEIA QUERIES
+TYPICAL DEVICE BREAKPOINTS
+
+> EXTRA SMALL (PHONE, 600PX AND DOWN): MAX-WIDTH: 600PX.
+> SMALL (PORTRAIT TABLETS AND LARGE PHONES, 600PX AND UP): MIN WIDTH: 600PX.
+> MEDIUM (LANDSCAPE TABLETS, 768PX AND UP): MIN-WIDTH: 768PX.
+> LARGE (LAPTOPS/DASKTOPS, 992PX AND UP): MIN-WIDTH: 992PX.
+> EXTRA LARGE (LARGE LAPTOPS AND DESKTOPS, 1200PX AND UP): MIN-WIDTH: 1200PX.
+*/
+
+@media screen and (min-width: 768px){
+    body{
+        background-image: linear-gradient(140deg, rgb(0, 255, 255),rgb(116, 255, 255), rgb(92, 255, 203) ,aquamarine, rgb(172, 255, 227));
+    }
+    div{
+        width: 450px;
+    }
+    fieldset{
+        width: 88%;
+        border: none;
+    }
+    .incenter{
+        text-align: center;
+        width: 60%;
+        border-radius: 9px;
+        background-color: transparent;
+        backdrop-filter: blur(20px);
+    }
+    
+}
