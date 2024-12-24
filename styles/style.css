@@ -4,11 +4,34 @@
     margin: 0%;
     padding: 0%;
 }
+:root{
+    /* COLORS */
+    --color000:rgb(0, 233, 128);
+    --color001:#02731E;
+    --color002:#02590F;
+    --color003:#034001;
+    --color004:#022601;
+    --color005:#011600;
+}
+@keyframes backgroundAnimation {
+    /* ANIMATION */
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
 
 body{
-    font-family: 'Times New Roman', Times, serif;
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 100vh;
-    background-image: linear-gradient(to right, aqua, aquamarine);
+    background-image: linear-gradient(to right, black, var(--color005), var(--color005),black);
+    animation: backgroundAnimation 10s ease infinite;
+    background-size: 400% 400%;
     position: relative;
 }
 
@@ -23,7 +46,7 @@ div{
 }
 
 form{
-    background-color: white;
+    background-color: var(--color003);
     box-shadow: 2px 3px 4px 2px rgba(0, 0, 0, 0.259);
     border-radius: 11px;
     margin: 80px 10px 80px 10px;
@@ -31,16 +54,22 @@ form{
     text-align: center;
 }
 
+h2{
+    color:  black;
+    font-weight: bolder;
+}
+
 fieldset{
-    background-image: url(../images/pexels-ben-neale-M.jpg);
+    background-image: url(../images/hack.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 
     margin:auto ;
     width: 80%;
     height: 65%;
     border-radius: 11px;
-    border: solid white 1px;
+    border: solid var(--color003) px;
 
     position: absolute;
     top: 50%;
@@ -49,8 +78,8 @@ fieldset{
 }
 
 .incenter{
-    color: rgb(79, 79, 79);
-    background-color: white;
+    color:  rgb(0, 233, 128);
+    background-color: var(--color003);
     max-width: 100%;
 
     position: absolute;
@@ -60,14 +89,8 @@ fieldset{
     text-align: center;
 }
 
-#bx-user{
-    position: absolute;
-    top: 50%;
-    left: 85%;
-    transform: translate(-50%, -50%);
-}
-
-#bx-lock{
+#bx-user, #bx-lock{
+    color:  rgb(0, 233, 128);
     position: absolute;
     top: 50%;
     left: 85%;
@@ -81,26 +104,28 @@ p{
 }
 
 input {
-    border: solid  lightgray 1.5px;
-    background-color:white;
-    color:rgb(101, 101, 101);
+    border: solid  black 1.5px;
+    background-color:black;
+    color: rgb(0, 233, 128);
+    cursor: pointer;
     border-radius: 5px;
     margin: 0px px 0px 0px;
     padding:4px;
- 
 }
 
 input:hover{
-    background-color: rgb(217, 255, 238);
     border: solid  rgb(0, 233, 128) 1.5px;
-    color: rgb(0, 153, 84);
+    color:  rgb(0, 233, 128);
     transition: 0.8s;
 }
 
 input::after{
-    background-color: rgb(217, 255, 238);
     border: solid  rgb(0, 233, 128) 1.5px;
-    color: rgb(0, 153, 84);
+    color: rgb(0, 233, 128);
+}
+
+input::placeholder{
+    color:  rgb(0, 233, 128);
 }
 
 .downmiddle{
@@ -109,4 +134,10 @@ input::after{
 
     position: absolute;
     top: 104%;
+}
+
+.send, .clear{
+    font-weight: bold; 
+    padding: 4px; 
+    margin-right: 6px;
 }

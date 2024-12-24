@@ -9,29 +9,29 @@
     <title>Login page</title>
 </head>
 <body>
-            <div>
-                <form action="register.php" method="post" autocomplete="off" target="_blank">
-                    <h2 id="white" style="color: rgb(101, 101, 101);">login</h2>
-                    <fieldset>
+<div>
+    <form action="register.php" method="post" autocomplete="off" target="_blank">
+        <h2>login</h2>
+        <fieldset>
 
-                    <div class="incenter">
-                        <p>
-                            <label for="imail"></label>
-                            <input type="email" name="email" id="imail" required placeholder="E-mail" maxlength="25" minlength="15" size="25">
-                            <i id="bx-user" class='bx bx-user'></i>
-                        </p>
-                        <p>
-                            <label for="ipassword"></label>
-                            <input type="password" name="password" id="ipassword" required placeholder="Password" maxlength="15" minlength="8" size="25">
-                            <i id="bx-lock" class='bx bx-lock-alt' ></i>
-                        </p>
-                    </div>
-                    <div class="downmiddle">
-                        <input style="font-weight: bold; padding: 4px; margin-right: 6px;" type="submit" value="Send">
-                        <input style="font-weight: bold; padding: 4px;" type="reset" value="Clear">
-                    </div>
-                    </fieldset>
-                </form>
-            </div>
+        <div class="incenter">
+            <p>
+                <label for="imail"></label>
+                <input type="email" name="email" id="imail" required placeholder="E-mail" maxlength="25" minlength="15" size="25">
+                <i id="bx-user" class='bx bx-user'></i>
+            </p>
+            <p>
+                <label for="ipassword"></label>
+                <input type="password" name="password" id="ipassword" required placeholder="Password" maxlength="15" minlength="8" size="25">
+                <i id="bx-lock" class='bx bx-lock-alt' ></i>
+            </p>
+        </div>
+        <div class="downmiddle">
+            <input class="send"  type="submit" value="Send">
+            <input class="clear" type="reset" value="Clear">
+        </div>
+        </fieldset>
+    </form>
+</div>
 </body>
 </html>

@@ -12,10 +12,10 @@ TYPICAL DEVICE BREAKPOINTS
 
 @media screen and (min-width: 768px){
     body{
-        background-image: linear-gradient(140deg, rgb(0, 255, 255),rgb(116, 255, 255), rgb(92, 255, 203) ,aquamarine, rgb(172, 255, 227));
+        background-image: linear-gradient(-45deg, black,#011600, #011600,black ,black);
     }
     div{
-        width: 450px;
+        width: 470px;
     }
     fieldset{
         width: 88%;
@@ -29,4 +29,60 @@ TYPICAL DEVICE BREAKPOINTS
         backdrop-filter: blur(20px);
     }
     
+}
+@media screen and (min-width: 992px){
+    body{
+        background-image: url(../images/hack.jpg);
+        background-size: cover;
+        background-repeat: repeat-y;
+
+    }
+
+    div{
+        width: 500px;
+    }
+    form{
+        background-color: transparent;
+        backdrop-filter: blur(5px);
+    }
+    h2{
+        color: var(--color000);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: normal;
+        padding: 0%;
+        margin: auto;
+        width: 16%;
+        text-align: center;
+        border-radius: 0 0 5px 5px;
+        font-size: 1.6em;
+    }
+    fieldset{
+        background-image: url(../images/hack.jpg);
+        height: 86%;
+        width: 90%;
+    }
+    .incenter{
+        backdrop-filter: blur(0);
+        width: 70%;
+        padding: 10px 0px;
+        top: 45%;
+    }
+    input{
+        padding: 10px 16px;
+    }
+    .send{
+        background-color: black;
+        padding-bottom: 6px;
+        margin-right: 25px;
+        border-radius: 0px;
+    }
+    .clear{
+        background-color: black;
+        padding-bottom: 6px;
+        margin-right: 0px;
+        border-radius: 0px;
+    }
+    .downmiddle{
+        top: 105%;
+    }
 }
