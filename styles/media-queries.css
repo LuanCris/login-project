@@ -31,15 +31,30 @@ TYPICAL DEVICE BREAKPOINTS
     
 }
 @media screen and (min-width: 992px){
+    @keyframes backgroundAnimation {
+        /* ANIMATION */
+        0%{
+            background-position: 0% 0%;
+        }
+        100%{
+            background-position: 0% -100%;
+        }
+    }
     body{
         background-image: url(../images/hack.jpg);
         background-size: cover;
+        background: linear-gradient(to bottom url(../images/hack.jpg));
         background-repeat: repeat-y;
-
+        animation:backgroundAnimation 1s linear infinite;
+        width: 100%;
+        height: 100%;
+        display: flex;
     }
 
     div{
+        height: 100%;
         width: 500px;
+        position: absolute;
     }
     form{
         background-color: transparent;
@@ -47,7 +62,7 @@ TYPICAL DEVICE BREAKPOINTS
     }
     h2{
         color: var(--color000);
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Courier New', Courier, monospace;
         font-weight: normal;
         padding: 0%;
         margin: auto;
@@ -58,6 +73,7 @@ TYPICAL DEVICE BREAKPOINTS
     }
     fieldset{
         background-image: url(../images/hack.jpg);
+        animation: backgroundAnimation  15s  else infinite;
         height: 86%;
         width: 90%;
     }
@@ -65,9 +81,10 @@ TYPICAL DEVICE BREAKPOINTS
         backdrop-filter: blur(0);
         width: 70%;
         padding: 10px 0px;
-        top: 45%;
+        top:80%;
     }
     input{
+        size: 800px;
         padding: 10px 16px;
     }
     .send{
@@ -83,6 +100,6 @@ TYPICAL DEVICE BREAKPOINTS
         border-radius: 0px;
     }
     .downmiddle{
-        top: 105%;
+        top: 151%;
     }
 }

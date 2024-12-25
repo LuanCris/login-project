@@ -27,12 +27,13 @@
 }
 
 body{
-    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     height: 100vh;
     background-image: linear-gradient(to right, black, var(--color005), var(--color005),black);
     animation: backgroundAnimation 10s ease infinite;
     background-size: 400% 400%;
     position: relative;
+    overflow: hidden;
 }
 
 div{
@@ -55,8 +56,8 @@ form{
 }
 
 h2{
-    color:  black;
-    font-weight: bolder;
+    color:  var(--color000);
+    font-weight: lighter;
 }
 
 fieldset{
